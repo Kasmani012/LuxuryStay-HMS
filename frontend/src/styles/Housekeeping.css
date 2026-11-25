@@ -1,0 +1,174 @@
+
+.housekeeping-container {
+  padding: 25px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.housekeeping-container h2 {
+  color: #0d47a1;
+  margin-bottom: 8px;
+}
+
+.housekeeping-container p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.housekeeping-card {
+  background: white;
+  padding: 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.housekeeping-card h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.housekeeping-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.housekeeping-form-grid label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.housekeeping-form-grid input,
+.housekeeping-form-grid select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.housekeeping-form-grid input:focus,
+.housekeeping-form-grid select:focus {
+  border-color: #0d6efd;
+}
+
+.hk-submit-btn,
+.hk-cancel-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.hk-submit-btn {
+  background: #0d6efd;
+  color: white;
+}
+
+.hk-submit-btn:hover {
+  background: #084298;
+}
+
+.hk-cancel-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.hk-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.hk-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.hk-table th,
+.hk-table td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.hk-table th {
+  background: #0d47a1;
+  color: white;
+}
+
+.hk-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.hk-edit-btn,
+.hk-delete-btn {
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hk-edit-btn {
+  background: #e3f0ff;
+  color: #0d6efd;
+  border: 1px solid #b6d4fe;
+}
+
+.hk-delete-btn {
+  background: #ffe5e5;
+  color: #dc3545;
+  border: 1px solid #f5c2c7;
+}
+
+.hk-edit-btn:hover {
+  background: #0d6efd;
+  color: white;
+}
+
+.hk-delete-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.hk-status {
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hk-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.hk-status.in-progress {
+  background: #cfe2ff;
+  color: #084298;
+}
+
+.hk-status.completed {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+@media (max-width: 600px) {
+  .housekeeping-container {
+    padding: 12px;
+  }
+
+  .housekeeping-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .housekeeping-card {
+    padding: 15px;
+  }
+}

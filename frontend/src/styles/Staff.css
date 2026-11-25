@@ -1,0 +1,125 @@
+
+.staff-page {
+  min-height: 100vh;
+  background: #f2f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.staff-header {
+  background: #2874a6;
+  color: white;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staff-header h2 {
+  margin: 0;
+}
+
+.staff-content {
+  padding: 30px;
+}
+
+.staff-content > p {
+  color: #666;
+  margin: 10px 0 25px;
+}
+
+.staff-form-section,
+.staff-list-section {
+  background: white;
+  padding: 22px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.staff-form-section h3,
+.staff-list-section h3 {
+  margin-bottom: 20px;
+}
+
+.staff-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.staff-form label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.staff-form input,
+.staff-form select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.staff-form-actions {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.staff-save-button,
+.staff-cancel-button,
+.staff-edit-button,
+.staff-delete-button {
+  border: none;
+  border-radius: 4px;
+  padding: 9px 13px;
+  color: white;
+  cursor: pointer;
+}
+
+.staff-save-button,
+.staff-edit-button {
+  background: #2874a6;
+}
+
+.staff-cancel-button {
+  background: #777;
+}
+
+.staff-delete-button {
+  background: #c0392b;
+  margin-left: 6px;
+}
+
+.staff-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.staff-list-section table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.staff-list-section th,
+.staff-list-section td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.staff-list-section th {
+  background: #e8f1f8;
+}
+
+@media (max-width: 600px) {
+  .staff-content {
+    padding: 15px;
+  }
+
+  .staff-form {
+    grid-template-columns: 1fr;
+  }
+}

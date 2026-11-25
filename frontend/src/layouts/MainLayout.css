@@ -1,0 +1,18 @@
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .main-layout {
+    flex-direction: column;
+  }
+}

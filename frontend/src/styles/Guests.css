@@ -1,0 +1,124 @@
+
+.guests-page {
+  min-height: 100vh;
+  background: #f2f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.guests-header {
+  background: #2874a6;
+  color: white;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guests-header h2 {
+  margin: 0;
+}
+
+.guests-content {
+  padding: 30px;
+}
+
+.guests-content > p {
+  color: #666;
+  margin: 10px 0 25px;
+}
+
+.guest-form-section,
+.guest-list-section {
+  background: white;
+  padding: 22px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.guest-form-section h3,
+.guest-list-section h3 {
+  margin-bottom: 20px;
+}
+
+.guest-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.guest-form label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.guest-form input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.guest-form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.guest-save-button,
+.guest-cancel-button,
+.guest-edit-button,
+.guest-delete-button {
+  border: none;
+  border-radius: 4px;
+  padding: 9px 13px;
+  color: white;
+  cursor: pointer;
+}
+
+.guest-save-button,
+.guest-edit-button {
+  background: #2874a6;
+}
+
+.guest-cancel-button {
+  background: #777;
+}
+
+.guest-delete-button {
+  background: #c0392b;
+  margin-left: 6px;
+}
+
+.guest-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.guest-list-section table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.guest-list-section th,
+.guest-list-section td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.guest-list-section th {
+  background: #e8f1f8;
+}
+
+@media (max-width: 600px) {
+  .guests-content {
+    padding: 15px;
+  }
+
+  .guest-form {
+    grid-template-columns: 1fr;
+  }
+}
